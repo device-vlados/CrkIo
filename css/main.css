@@ -1013,14 +1013,14 @@ p {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../images/service/2block-no.svg") no-repeat 50% 50%;
+  background: url("../images/service/2block-no.svg") no-repeat;
   width: 100%;
   height: 100%;
   transition: all 0.3s;
 }
 .service__grid-back:hover {
   z-index: 5;
-  background: url("../images/service/2block.svg") no-repeat 50% 50%;
+  background: url("../images/service/2block.svg") no-repeat;
   width: 100%;
   height: 100%;
   transform: scale(0.97);
@@ -1030,7 +1030,7 @@ p {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../images/service/4block1.svg") no-repeat 50% 50%;
+  background: url("../images/service/4block1.svg") no-repeat;
   width: 100%;
   height: 100%;
   transition: all 0.3s;
@@ -1038,7 +1038,7 @@ p {
 }
 .service__grid-backgraund:hover {
   z-index: 5;
-  background: url("../images/service/4block12.svg") no-repeat 50% 50%;
+  background: url("../images/service/4block12.svg") no-repeat;
   width: 100%;
   height: 100%;
   transform: scale(0.97);
@@ -1048,14 +1048,14 @@ p {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../images/service/3block-no.svg") no-repeat 50% 50%;
+  background: url("../images/service/3block-no.svg") no-repeat;
   width: 100%;
   height: 100%;
   transition: all 0.3s;
 }
 .service__grid-backgraunds:hover {
   z-index: 5;
-  background: url("../images/service/3block.svg") no-repeat 50% 50%;
+  background: url("../images/service/3block.svg") no-repeat;
   width: 100%;
   height: 100%;
   transform: scale(0.97);
@@ -1065,14 +1065,14 @@ p {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../images/service/1block-no.svg") no-repeat 50% 50%;
+  background: url("../images/service/1block-no.svg") no-repeat;
   width: 100%;
   height: 100%;
   transition: all 0.3s;
 }
 .service__grid-backgr:hover {
   z-index: 5;
-  background: url("../images/service/1block.svg") no-repeat 50% 50%;
+  background: url("../images/service/1block.svg") no-repeat;
   width: 100%;
   height: 100%;
   transform: scale(0.97);
@@ -1090,18 +1090,28 @@ p {
   transition: all 0.3s;
 }
 
+@media (max-width: 1100px) {
+  .service__grid-list {
+    grid-template: repeat(2, auto)/repeat(2, auto);
+    gap: 47px;
+  }
+}
 @media (max-width: 1000px) {
+  .service__grid-list {
+    grid-template: repeat(2, auto)/repeat(2, auto);
+    gap: 47px;
+  }
   .service__grid-backgraund {
-    background: url("../images/service/4block-no.svg") no-repeat 50% 50%;
+    background: url("../images/service/4block-no.svg") no-repeat;
   }
   .service__grid-backgraund:hover {
-    background: url("../images/service/4block.svg") no-repeat 50% 50%;
+    background: url("../images/service/4block.svg") no-repeat;
   }
   .service__grid-backgr {
-    background: url("../images/service/1block1.svg") no-repeat 50% 50%;
+    background: url("../images/service/1block1.svg") no-repeat;
   }
   .service__grid-backgr:hover {
-    background: url("../images/service/1block12.svg") no-repeat 50% 50%;
+    background: url("../images/service/1block12.svg") no-repeat;
   }
 }
 @media (max-width: 900px) {
@@ -1117,10 +1127,15 @@ p {
     gap: 47px;
   }
   .service__grid-backgr {
-    background: url("../images/service/1block12.svg") no-repeat 50% 50%;
+    background: url("../images/service/1block12.svg") no-repeat;
   }
   .service__grid-backgr:hover {
-    background: url("../images/service/1block1.svg") no-repeat 50% 50%;
+    background: url("../images/service/1block1.svg") no-repeat;
+  }
+}
+@media (max-width: 650px) {
+  .service__grid-list {
+    gap: 47px;
   }
 }
 @media (max-width: 550px) {
@@ -1132,29 +1147,41 @@ p {
   .service__grid-list {
     display: grid;
     -ms-grid-rows: auto 47px auto;
-    -ms-grid-columns: 90vw;
-    grid-template: repeat(2, auto)/repeat(1, 90vw);
+    -ms-grid-columns: auto;
+    grid-template: repeat(2, auto)/repeat(1, 300px);
     gap: 47px;
   }
+  .service__grid-backs {
+    background: url("../images/service/4block1.svg") no-repeat;
+  }
+  .service__grid-backs:hover {
+    background: url("../images/service/4block12.svg") no-repeat;
+  }
   .service__grid-backgraund {
-    background: url("../images/service/4block1.svg") no-repeat 50% 50%;
+    background: url("../images/service/4block1.svg") no-repeat;
   }
   .service__grid-backgraund:hover {
-    background: url("../images/service/4block12.svg") no-repeat 50% 50%;
+    background: url("../images/service/4block12.svg") no-repeat;
+  }
+  .service__grid-backgraund {
+    background: url("../images/service/4block1.svg") no-repeat;
+  }
+  .service__grid-backgraund:hover {
+    background: url("../images/service/4block12.svg") no-repeat;
   }
 }
 @media (max-width: 550px) {
   .service__grid-backgr {
-    background: url("../images/service/1block-mob1.svg") no-repeat 50% 50%;
+    background: url("../images/service/1block-mob1.svg") no-repeat;
   }
   .service__grid-backgr:hover {
-    background: url("../images/service/1block-mob.svg") no-repeat 50% 50%;
+    background: url("../images/service/1block-mob.svg") no-repeat;
   }
   .service__grid-backgraund {
-    background: url("../images/service/4block-mob1.svg") no-repeat 50% 50%;
+    background: url("../images/service/4block-mob1.svg") no-repeat;
   }
   .service__grid-backgraund:hover {
-    background: url("../images/service/4block-mob.svg") no-repeat 50% 50%;
+    background: url("../images/service/4block-mob.svg") no-repeat;
   }
 }
 .main__testimonials {
